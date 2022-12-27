@@ -2,7 +2,8 @@ import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Skill({ skill }) {
-  return (
+  // console.log(skill.toString());
+   return (
     <li>
       <div className="rowFlexRes">
         <span>{skill.name}</span>

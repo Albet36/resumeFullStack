@@ -3,39 +3,28 @@ import CircularProg from "../components/circularProg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getDataMe } from "../redux/meData.slice";
 
 export default function Skills() {
-  const[data,listData]=useState("");
-  useEffect(()=>{
+  const [dataList, setDataList] = useState("");
+  const { data, loading } = useSelector((state) => ({ ...state.meData }));
+  const list = [];
 
-  },[])
-  const mainTechSkills = [
-    { name: "HTML", progress: "90" },
-    { name: "CSS", progress: "90" },
-    { name: "JavaScript", progress: "95" },
-    { name: "React", progress: "60" },
-    { name: "SQL", progress: "75" },
-    { name: "Git / GitHub", progress: "50" },
-  ];
-  const overallCirSkills = [
-    { name: "Web Development", progress: "90" },
-    { name: "Database Management", progress: "75" },
-    { name: "OOP", progress: "85" },
-  ];
-  const softSkills = [
-    "TeamWork",
-    "LeaderShip",
-    "Communication",
-    "Problem Solving Skills",
-  ];
-  const softwareSkills = [
-    { name: "VS Code", progress: "80" },
-    { name: "Bash", progress: "50" },
-    { name: "AutoCAD", progress: "75" },
-    { name: "Premiere", progress: "75" },
-    { name: "Photoshop", progress: "60" },
-    { name: "MS Excel", progress: "90" },
-  ];
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDataMe());
+  }, []);
+  if (data) {
+    return setDataList(data);
+  }
+
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
+  dataList && dataList.map(item => item.skillbar.map(val => list.push(val)));
+    console.log(list);
   return (
     <section className="container">
       <div className="containerCont sectionCont  sectionContSkills">
@@ -47,9 +36,9 @@ export default function Skills() {
             <div className="card">
               <h3>Main Tech</h3>
               <ul>
-                {mainTechSkills.map((skill, pos) => (
-                  <Skill key={pos} skill={skill} />
-                ))}
+
+                {/* <Skill skill={list.find(val1 => val1.category === 'mainTech')} /> */}
+
               </ul>
             </div>
           </div>
@@ -57,29 +46,22 @@ export default function Skills() {
             <div className="card">
               <h3>Overall</h3>
               <ul className="rowFlexRes breakOverall">
-                {overallCirSkills.map((skill, pos) => (
-                  <CircularProg key={pos} skill={skill} />
-                ))}
+
+                {/* <CircularProg skill={ list.find(val2 => val2.category === 'overallCir')} /> */}
+
               </ul>
               <ul>
                 <li>
-                  <ul className="rowFlexRes">
-                    {softSkills.slice(0, 2).map((skill, pos) => (
-                      <li key={pos}>
-                        <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
-                        <span style={{ opacity: "0.9" }}>{skill}</span>
-                      </li>
-                    ))}
-                  </ul>
+
                 </li>
                 <li>
                   <ul className="rowFlexRes">
-                    {softSkills.slice(2, 4).map((skill, pos) => (
-                      <li key={pos}>
-                        <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
-                        <span style={{ opacity: "0.9" }}>{`${skill}`}</span>
-                      </li>
-                    ))}
+
+                    <li>
+                      <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
+                      {/* <span style={{ opacity: "0.9" }}>{`${list.find(val3 => val3.category === 'soft')}`}</span> */}
+                    </li>
+
                   </ul>
                 </li>
               </ul>
@@ -90,9 +72,9 @@ export default function Skills() {
           <div className="card">
             <h3>Software</h3>
             <ul>
-              {softwareSkills.map((skill, pos) => (
-                <Skill key={pos} skill={skill} />
-              ))}
+
+              {/* <Skill skill={list.find(val4 => val4.category === 'software')} /> */}
+
             </ul>
           </div>
         </div>
