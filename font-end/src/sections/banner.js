@@ -16,9 +16,7 @@ export default function Banner() {
   useEffect(() => {
     dispatch(getDataMe());
   }, []);
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+
   function openModal() {
     setIsOpen(true);
   }

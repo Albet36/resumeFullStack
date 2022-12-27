@@ -1,20 +1,23 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-export default function Skill({ skill }) {
+const  Skill = ({ skill }) => {
   // console.log(skill.toString());
    return (
     <li>
-      <div className="rowFlexRes">
-        <span>{skill.name}</span>
+  {
+    typeof skill === 'undefined' ? (null) : (
+      <>
+          <div className="rowFlexRes">
+        <span>{skill?.name}</span>
         <span>
-          {skill.progress}
+          {skill?.progress}
           {"%"}
         </span>
       </div>
       <div>
         <ProgressBar
-          completed={skill.progress}
+          completed={skill?.progress}
           bgcolor={"var(--red)"}
           baseBgColor={"rgba(233, 233, 233, 0.8)"}
           width={"100%"}
@@ -22,6 +25,10 @@ export default function Skill({ skill }) {
           labelSize={"0"}
         />
       </div>
+      </>
+    )
+  }
     </li>
   );
 }
+export default Skill;

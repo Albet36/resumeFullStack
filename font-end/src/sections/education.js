@@ -11,9 +11,7 @@ export default function Education() {
   useEffect(() => {
     dispatch(getDataMe());
   }, []);
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+
   return (
     <section className="sectionCont sectionContEducation">
       <div id="education" className="target"></div>

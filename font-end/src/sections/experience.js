@@ -11,9 +11,7 @@ export default function Experience() {
   useEffect(() => {
     dispatch(getDataMe());
   }, []);
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+
   return (
     <section className="sectionCont sectionContExperience">
       <div id="experience" className="target"></div>
