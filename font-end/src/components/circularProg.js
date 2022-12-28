@@ -3,19 +3,22 @@ import "react-circular-progressbar/dist/styles.css";
 
 export default function circularProg({ skill }) {
   return (
-    <li className="circleSkillContainer">
+   <>
     {
-      typeof skill === 'undefined' ? (null) : (
-      <>
+      skill && skill.map(item => {return(
+        <li className="circleSkillContainer" style={{margin:5}}>
+        
         <div>
         <CircularProgressbar
-          value={skill.progress}
-          text={`${skill.progress}%`}
+          value={item.progress}
+          text={`${item.progress}%`}
         />
       </div>
-      <div>{skill.name}</div>
-      </>)
+      <div>{item.name}</div>
+      </li>
+      
+      )})
     }
-    </li>
+   </>
   );
 }

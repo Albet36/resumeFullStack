@@ -20,11 +20,13 @@ export default function Skills() {
   }, []);
 
    data && data?.map(item => item.skillbar.map(val => list.push(val)));
-    const softSkills = list && list.find(val3 => val3.category === 'soft'); 
-  // let softSkills = '';
-  //  console.log(softSkills); 
-    // console.log(list.find(val1 => val1.category === 'mainTech'));
-  return (
+    const mainTechSkills = list.filter(val1 => val1.category?.includes('mainTech'));
+    const softSkills = list.filter(val2 => val2.Category?.includes('softt'));
+    console.log(list);
+    const softWareSkills = list.filter(val3 => val3.category?.includes('software'));
+    const overallSkills = list.filter(val3 => val3.category?.includes('overallCir'));
+    // console.log(softSkill);
+    return (
     <section className="container">
       <div className="containerCont sectionCont  sectionContSkills">
         <header>
@@ -36,7 +38,7 @@ export default function Skills() {
               <h3>Main Tech</h3>
               <ul>
 
-                <Skill skill={list.find(val1 => val1.category === 'mainTech')} />
+                <Skill skill={mainTechSkills} />
 
               </ul>
             </div>
@@ -46,22 +48,26 @@ export default function Skills() {
               <h3>Overall</h3>
               <ul className="rowFlexRes breakOverall">
 
-                <CircularProg skill={list.find(val2 => val2.category === 'overallCir')} />
+                <CircularProg skill={overallSkills} />
 
               </ul>
-              <ul>
+              
+              
                 <li>
 
-                </li>
-                <li>
                   <ul className="rowFlexRes">
-                    <li>
-                      <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
-                      <span style={{ opacity: "0.9" }}>{softSkills?.name}</span>
-                    </li>
+                    {
+                      softSkills && softSkills.map(itm => {return(
+                        <li>
+                        <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
+                        <span style={{ opacity: "0.9" }}>{itm?.name}</span>
+                      </li>
+                      )})
+                    }
+                  
                   </ul>
                 </li>
-              </ul>
+              
             </div>
           </div>
         </div>
@@ -70,7 +76,7 @@ export default function Skills() {
             <h3>Software</h3>
             <ul>
 
-              <Skill skill={list && list.find(val4 => val4.category === 'software')} />
+              <Skill skill={softWareSkills} />
 
             </ul>
           </div>

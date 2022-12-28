@@ -77,9 +77,9 @@ export default function Banner() {
               </section>
               <figure className={styles.bannerContRight}>
                 <img
-                  alt="Francisco Pantoja"
-                  width="400px"
-                  height="350px"
+                  alt="Dao Duy Quang"
+                  width="300px"
+                  height="400px"
                   src={item.avatar}
                 />
               </figure>

@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Francisco Pantoja</title>
+        <title>Dao Duy Quang</title>
         <link rel="image_src" href="https://franciscopantojag.me/images/ogImage.jpg" />
         <meta
           name="description"
           content="Hey, this is my personal website. You can take a look at my resume, download my CV and see how you can contact me."
         />
-        <meta property="og:title" content="Francisco Pantoja" />
-        <meta property="og:site_name" content="Francisco Pantoja" />
+        <meta property="og:title" content="Dao Duy Quang" />
+        <meta property="og:site_name" content="Dao Duy Quang" />
         <meta property="og:url" content="https://franciscopantojag.me" />
         <meta
           property="og:description"

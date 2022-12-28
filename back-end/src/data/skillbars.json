@@ -1,0 +1,199 @@
+[
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b3"
+    },
+    "name": "ReactJS",
+    "progress": "70",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b4"
+    },
+    "name": "NextJS",
+    "progress": "70",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b5"
+    },
+    "name": "NodeJS",
+    "progress": "75",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b6"
+    },
+    "name": "PHP",
+    "progress": "65",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b7"
+    },
+    "name": "Laravel",
+    "progress": "73",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b8"
+    },
+    "name": "C#",
+    "progress": "50",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90b9"
+    },
+    "name": "Java",
+    "progress": "30",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c9"
+    },
+    "name": "SpringBoots",
+    "progress": "30",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c8"
+    },
+    "name": "Git/Github",
+    "progress": "80",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c7"
+    },
+    "name": "HTML & CSS",
+    "progress": "80",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c6"
+    },
+    "name": "JavaScript",
+    "progress": "75",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90e6"
+    },
+    "name": "Redux",
+    "progress": "70",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90e7"
+    },
+    "name": "TailwindCSS & Bootraps & Antd & Mantine",
+    "progress": "80",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c5"
+    },
+    "name": "MongoDB",
+    "progress": "65",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c4"
+    },
+    "name": "SQL",
+    "progress": "70",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d3dc16351c7118bb90c3"
+    },
+    "name": "ReactJS",
+    "progress": "70",
+    "category": "mainTech"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d47a16351c7118bb90bb"
+    },
+    "name": "Web Deverloper",
+    "progress": "60",
+    "category": "overallCir"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d47a16351c7118bb90cc"
+    },
+    "name": "Database Management",
+    "progress": "55",
+    "category": "overallCir"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d47a16351c7118bb90ee"
+    },
+    "name": "OOP",
+    "progress": "70",
+    "category": "overallCir"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d47a16351c7118bb90ff"
+    },
+    "name": "MVC",
+    "progress": "60",
+    "category": "overallCir"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d52516351c7118bb90bc"
+    },
+    "name": "TeamWork",
+    "Category": "softt"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d52516351c7118bb90e1"
+    },
+    "name": "Problem Solving Skills",
+    "Category": "softt"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d52516351c7118bb90e2"
+    },
+    "name": "Comunication",
+    "Category": "softt"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d54916351c7118bb90bd"
+    },
+    "name": "VSCode",
+    "progress": "80",
+    "category": "software"
+  },
+  {
+    "_id": {
+      "$oid": "63a9d54916351c7118bb90d1"
+    },
+    "name": "PostMan",
+    "progress": "60",
+    "category": "software"
+  }
+]

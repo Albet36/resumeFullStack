@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "63a9d57a16351c7118bb90c0"
+  },
+  "name": "FPT Software",
+  "dateStart": "01/2021",
+  "dateEnd": "12/2021",
+  "position": "Internal",
+  "description": "Here I learned and worked on some interface projects and used technologies like reactJS and NextJS along with some libraries for interfaces like TailwindCSS,Boostrap,Mantine,Antd as well as getting acquainted with GITHUB, BITBUCKET and some teamwork software like Slack,Telegram,..."
+}]

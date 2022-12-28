@@ -27,7 +27,7 @@ export default function AboutMe() {
         <header>
           <h2>about me</h2>
           <h3>
-            Hi! My name is Francisco Pantoja,{' '}
+            Hi! My name is {item.name},{' '}
             <span className="colorRed">Web Developer</span>
           </h3>
         </header>
