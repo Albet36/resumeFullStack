@@ -8,8 +8,6 @@ import { getDataMe } from '../redux/meData.slice';
 import Facebook from '../svg/facebook.js';
 
 export default function Banner() {
-  const name = 'Francisco Pantoja';
-  const email = 'franciscopantojag98@gmail.com';
   const { setIsOpen } = useContext(Contexto);
   const { data, loading } = useSelector((state) => ({ ...state.meData }));
   const dispatch = useDispatch();
@@ -42,6 +40,7 @@ export default function Banner() {
                   {item.positionDeal}
                 </h2>
                 <h3>REACT / NEXTJS</h3>
+                <h3>{item.address}</h3>
                 <h3>
                   <a href={`mailto:${item.email}`}>{item.email}</a>
                 </h3>
@@ -50,7 +49,7 @@ export default function Banner() {
                     <button className={`${styles.but}`}>
                       <a
                         target="_blank"
-                        href="/pdf/resume_francisco_pantoja.pdf"
+                        href="/pdf/cv-me.pdf"
                       >
                         DOWNLOAD RESUME
                       </a>

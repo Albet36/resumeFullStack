@@ -1,6 +1,7 @@
 import { model, Schema, Types } from 'mongoose';
 import Education from './Education.models.js';
 import Skillbar from './Skillbar.models.js';
+import Target from './Target.models.js';
 
 import WorkExperience from './Work.models.js';
 
@@ -25,7 +26,8 @@ const meSchema = new Schema({
     phone:String,
     education: [{ type: Schema.Types.ObjectId, ref: Education }],
     workexperience: [{ type: Schema.Types.ObjectId, ref: WorkExperience }],
-    skillbar: [{ type: Schema.Types.ObjectId, ref: Skillbar }]
+    skillbar: [{ type: Schema.Types.ObjectId, ref: Skillbar }],
+    target: [{ type: Schema.Types.ObjectId, ref:Target }]
 });
 
 const me = model('Me',meSchema);

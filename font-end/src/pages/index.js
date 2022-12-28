@@ -8,6 +8,7 @@ import Skills from "../sections/skills";
 import Modal from "../components/modal";
 import { Contexto } from "../appContext";
 import { useContext } from "react";
+import Target from "../sections/target";
 
 export default function Home() {
   const { navResOpen, setNavResOpen } = useContext(Contexto);
@@ -46,6 +47,7 @@ export default function Home() {
       <main onClick={closeNavRes}>
         <Banner />
         <AboutMe />
+        <Target />
         <section className="container">
           <div className="containerCont rowFlexRes breakExpEduc">
             <Experience />

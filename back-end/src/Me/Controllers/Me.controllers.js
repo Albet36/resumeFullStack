@@ -25,6 +25,13 @@ export const dataAll = async(req,res) =>{
                         foreignField:'ObjectId',
                         as:'skillbar'
                     }},
+                    {
+                        $lookup:{
+                            from:'targets',
+                            localField:'ObjectId',
+                            foreignField:'ObjectId',
+                            as:'target'
+                        }},
             
                 // {
                 //     $unwind:{

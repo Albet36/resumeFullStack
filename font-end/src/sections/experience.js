@@ -29,7 +29,7 @@ export default function Experience() {
                       <h5>
                         <span>
                           <FontAwesomeIcon icon={faCalendarAlt} />{' '}
-                          {val.dateStart}
+                          {val.dateStart} -    {val.dateEnd}
                         </span>
                       </h5>
                       <h3>{val.name}</h3>
