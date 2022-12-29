@@ -22,7 +22,6 @@ export default function Skills() {
    data && data?.map(item => item.skillbar.map(val => list.push(val)));
     const mainTechSkills = list.filter(val1 => val1.category?.includes('mainTech'));
     const softSkills = list.filter(val2 => val2.Category?.includes('softt'));
-    console.log(list);
     const softWareSkills = list.filter(val3 => val3.category?.includes('software'));
     const overallSkills = list.filter(val3 => val3.category?.includes('overallCir'));
     // console.log(softSkill);

@@ -23,7 +23,7 @@ export default function Target() {
     data && data.map(item => item.target?.map(val => {
         return(
           <div className="containerCont sectionCont sectionContAbout">
-          <div id="about" className="target"></div>
+          <div id="target" className="target"></div>
           <header>
             <h2>Target</h2>
           </header>

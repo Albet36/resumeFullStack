@@ -5,5 +5,5 @@ const targetSchema = new Schema({
    target:String,
     quotations:String,
 })
-const Target = model('Target',targetSchema);
+const Target = model('target',targetSchema);
 export default Target;
