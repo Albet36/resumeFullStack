@@ -57,7 +57,7 @@ export default function Skills() {
                   <ul className="rowFlexRes">
                     {
                       softSkills && softSkills.map(itm => {return(
-                        <li>
+                        <li key={itm.name}>
                         <FontAwesomeIcon color="var(--red)" icon={faCheck} />{" "}
                         <span style={{ opacity: "0.9" }}>{itm?.name}</span>
                       </li>

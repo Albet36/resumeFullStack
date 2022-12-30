@@ -6,7 +6,7 @@ export default function circularProg({ skill }) {
    <>
     {
       skill && skill.map(item => {return(
-        <li className="circleSkillContainer" style={{margin:5}}>
+        <li className="circleSkillContainer" style={{margin:5}} key={item.name}>
         
         <div>
         <CircularProgressbar

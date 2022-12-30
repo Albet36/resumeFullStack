@@ -29,7 +29,7 @@ const  Skill = ({ skill }) => {
     skill && skill.map(item => {
       return(
         <>
-          <div className="rowFlexRes" style={{margin:'10px 0'}}>
+          <div className="rowFlexRes" style={{margin:'10px 0'}} key={item.name}>
         <span>{item?.name}</span>
         <span>
           {item?.progress}
