@@ -27,6 +27,14 @@ export default function NavBar() {
       target: "#experience",
     },
     {
+      label: "project",
+      target: "#project",
+    },
+    {
+      label: "careAbout",
+      target: "#careAbout",
+    },
+    {
       label: "education",
       target: "#education",
     },
