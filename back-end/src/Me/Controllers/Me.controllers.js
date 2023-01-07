@@ -3,7 +3,6 @@ import me from "../models/Me.models.js";
 
 export const dataAll = async(req,res) =>{
     try {
-        //  const data = await me.find({}).populate('workexperience').populate('education').populate('skillbar');
         const data = await me.aggregate([{
             $lookup:{
                 from:'workexperiences',
@@ -27,20 +26,25 @@ export const dataAll = async(req,res) =>{
                     }},
                     {
                         $lookup:{
+                            from:'projects',
+                            localField:'ObjectId',
+                            foreignField:'ObjectId',
+                            as:'project'
+                        }},
+                    {
+                        $lookup:{
                             from:'targets',
                             localField:'ObjectId',
                             foreignField:'ObjectId',
                             as:'target'
                         }},
-            
-                // {
-                //     $unwind:{
-                //         path: "$work",
-                      
-                //     }
-                // }
-            
-         
+                        {
+                            $lookup:{
+                                from:'careAbouts',
+                                localField:'ObjectId',
+                                foreignField:'ObjectId',
+                                as:'careAbout'
+                            }},
         ])
          res.status(200).json(data);
     } catch (err) {

@@ -153,6 +153,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .cardContainer {
   margin-top: 1.3em;
   width: 100%;
@@ -322,6 +323,7 @@ a {
 .sectionContSkills .cardContainer:nth-child(3) {
   margin-top: 0;
 }
+
 @media (max-width: 1223px) {
   .sectionContExperience .card,
   .sectionContEducation .card {
@@ -384,6 +386,7 @@ a {
   .sectionCont {
     font-size: 1rem;
     margin-bottom: 2.5rem;
+    word-wrap: break-word;
   }
   .sectionCont h2 {
     font-size: 2.5rem;
@@ -434,6 +437,9 @@ a {
 }
 
 @media (max-width: 660px) {
+  .rowFlexRes {
+font-size: .8em
+  }
   .breakExpEduc {
     flex-direction: column;
     justify-content: flex-start;
@@ -455,7 +461,8 @@ a {
   }
   .breakOverall {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: center; */
+    margin-left:35%
   }
   .sectionContSkills .cardContainer:nth-child(2) .card > ul:nth-child(2) li {
     width: 120px;

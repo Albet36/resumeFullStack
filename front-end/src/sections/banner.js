@@ -49,7 +49,7 @@ export default function Banner() {
                     <button className={`${styles.but}`}>
                       <a
                         target="_blank"
-                        href="/pdf/cv-me.pdf"
+                        href="/pdf/cv_me.pdf"
                       >
                         DOWNLOAD RESUME
                       </a>

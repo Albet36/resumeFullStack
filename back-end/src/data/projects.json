@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "63b901ffa2fa83e60ee9e098"
+  },
+  "name": "OFFICE ADMINISTRATION",
+  "dateStart": "3/2022",
+  "dateEnd": "11/2022",
+  "description": "tạo và quản lý các tài nguyên của cty, tạo và quản lý việc booking để\nsử dụng tài nguyên, báo cáo thống kê tình trạng sử dụng tài nguyên",
+  "technologyUsed": "NextJS,Redux,TypeScripts,TailwindCSS\n",
+  "detail": "Các trang web, ứng dụng dành cho thiết bị di động và trang đích đã được\ntriển khai từ ý tưởng cho đến khi triển khai.\nĐã chuẩn hóa tất cả đầu ra bằng chiến lược và cách tiếp cận và chiến\nlược mới, nhạy bén, ưu tiên thiết bị di động.\nCác thiết kế UX và UI được đánh giá về tính khả thi về mặt kỹ thuật.\nPhát triển các báo cáo tiêu chuẩn và báo cáo đột xuất ở định dạng đồ thị\ntheo yêu cầu.\nCộng tác với các thành viên trong nhóm sản phẩm để triển khai và phát\ntriển các tính năng mới.",
+  "position": "Front-End Deverloper"
+}]
