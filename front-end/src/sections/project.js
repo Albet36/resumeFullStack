@@ -36,13 +36,14 @@ export default function Project() {
                       <h4>{val.position}</h4>
                       <ul>
                       <li>
-                          <span>Công nghệ sử dụng:{val.technologyUsed}</span>
+                          <span>
+                          Technology used:{val.technologyUsed}</span>
                         </li>
                         <li>
                           <span>{val.description}</span>
                         </li>
                         <li>
-                        <span>Chi tiết: </span>
+                        <span>Details: </span>
                         <span>{val.detail}</span>
                       </li>
                       </ul>
