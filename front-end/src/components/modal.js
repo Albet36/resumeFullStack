@@ -35,9 +35,9 @@ export default function Modal() {
   const submitForm = async (e) => {
     e.preventDefault();
     const emailjsObj = {
-      serviceId: "gmail",
-      templateId: "template_aRfTvlUy",
-      userId: process.env.NEXT_PUBLIC_USER_ID,
+      serviceId: "service_p0moz8v",
+      templateId: "template_xicqr7e",    
+      userId: '7mgKg3dX8KqIiXNc0',
     };
     try {
       if (allowSend) {
@@ -49,9 +49,9 @@ export default function Modal() {
           emailjsObj.userId
         );
         if (result.status == 200) {
-          setSubmitMessage(() => "Gracias!");
+          setSubmitMessage(() => "Send Message Success!");
         } else {
-          setSubmitMessage(() => "Ha ocurrido un error");
+          setSubmitMessage(() => "Send Message Error !");
         }
         console.log("result:", result);
         await timeout(2);

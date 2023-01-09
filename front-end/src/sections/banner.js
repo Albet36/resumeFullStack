@@ -79,7 +79,7 @@ export default function Banner() {
                   alt="Dao Duy Quang"
                   width="300px"
                   height="400px"
-                  src={item.avatar}
+                  src="/images/profile.jpg"
                 />
               </figure>
             </div>
