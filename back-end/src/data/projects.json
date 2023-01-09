@@ -7,6 +7,6 @@
   "dateEnd": "11/2022",
   "description": "Create and manage company resources, create and manage bookings to\nresource usage, resource usage statistics report",
   "technologyUsed": "NextJS,Redux,TypeScripts,TailwindCSS\n",
-  "detail": "Websites, mobile apps, and landing pages have been\nimplementation from concept to implementation.\nStandardized all output with strategy and approach and strategy\nNew, responsive, mobile-first strategy.\nUX and UI designs are evaluated for technical feasibility.\nDevelop standard reports and ad hoc reports in graph format\nas required.\nCollaborate with product team members to deploy and develop\ndevelop new features.",
+  "detail": "Websites, mobile apps, and landing pages have been\nimplementation from concept to implementation.\nStandardized all output with strategy and approach and strategy\nNew, responsive, mobile-first strategy.\nUX and UI designs are evaluated for technical feasibility.\nDevelop standard reports and ad hoc reports in graph format\nas required.\nCollaborate with product team members to deploy and develop\ndevelop new features.\nFunctionality : create, update delete,search booking,show or hidden status,create, update delete,search resource,show or hidden status, ,search,Approved,statistics,\ncreate, update delete,message\n",
   "position": "Front-End Deverloper"
 }]
